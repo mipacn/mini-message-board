@@ -51,4 +51,4 @@ app.post("/new", (req, res) => {
 
 app.use("/messages", createMessageRouter(messages))
 
-app.listen(3000)
+app.listen(8000)
