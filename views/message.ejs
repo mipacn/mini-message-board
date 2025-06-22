@@ -1,11 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>message details</title>
-		<link rel="stylesheet" href="styles.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Message Details</title>
+		<link rel="stylesheet" href="/styles.css" />
 	</head>
 	<body>
-		<h1>message from <%= message.user %></h1>
-		<p>created at <%= message.added %></p>
-		<h3><%= message.text %></h3>
+		<div class="message-details">
+			<h1>Message from <%= message.user %></h1>
+			<span class="date"
+				>Created <%= message.added.toLocaleDateString() %> at <%=
+				message.added.toLocaleTimeString() %></span
+			>
+			<div class="message-content"><%= message.text %></div>
+			<a href="/" class="back-link">← Back to Messages</a>
+		</div>
 	</body>
 </html>
