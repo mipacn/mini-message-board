@@ -9,5 +9,5 @@ services:
       commands:
         - npm start # This is your run command
     ports:
-      - port: 3000 # Your app should listen on this port
+      - port: 8000 # Your app should listen on this port
         protocol: http
